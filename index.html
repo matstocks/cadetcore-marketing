@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadet Training Platform &mdash; Sea Cadets, Royal Marines Cadets, Junior Sea Cadets</title>
+  <meta name="description" content="Remove guesswork from cadet training. Plan sessions, track completions, and see what every Sea Cadet, Royal Marines Cadet, and Junior Cadet still needs.">
+  <meta name="theme-color" content="#0f2040">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="nav-brand">
+      <img src="/sea-cadets.png" alt="Sea Cadets" class="nav-logo">
+      <span class="nav-title">Cadet Training Platform</span>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#why">Why</a>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#security">Security</a>
+      <a href="#contact" class="btn btn-sm btn-outline-light">Request Pilot Access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container hero-content">
+    <h1>Remove Guesswork from Cadet Training</h1>
+    <p class="hero-subtitle">Plan sessions confidently, protect progression, and see instantly what every Sea Cadet, Royal Marines Cadet, and Junior Cadet still needs.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary btn-lg">Request Pilot Access</a>
+      <a href="#features" class="btn btn-ghost">See How It Works</a>
+    </div>
+    <ul class="hero-reassurance">
+      <li>Works alongside Westminster</li>
+      <li>Designed for real units</li>
+      <li>No extra admin burden</li>
+    </ul>
+  </div>
+</header>
+
+<!-- Why It Matters -->
+<section class="section section-light" id="why">
+  <div class="container">
+    <h2 class="section-title">Why Units Need This</h2>
+    <p class="section-subtitle">Training management shouldn't depend on memory, spreadsheets, or guesswork. The Cadet Training Platform gives OiCs and Training Officers the visibility they need.</p>
+    <div class="cards-four">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="12" y1="12" x2="12" y2="18"/></svg>
+        </div>
+        <h3>Replace Spreadsheets</h3>
+        <p>Stop tracking completions in Excel. One system holds everything &mdash; accurate, searchable, and always up to date.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3>Protect Leadership Sequence</h3>
+        <p>Prerequisites and module sequences are enforced automatically. No cadet skips a step.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Visibility for OiC &amp; TOs</h3>
+        <p>See unit-wide progress at a glance. Know which cadets are close to completing, and which ranks need attention.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <h3>Reduce Reactive Planning</h3>
+        <p>Intelligent recommendations tell you exactly what to teach next, based on coverage, freshness, and prerequisites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section section-dark" id="features">
+  <div class="container">
+    <h2 class="section-title">Structured Training Intelligence</h2>
+    <p class="section-subtitle">Purpose-built for Sea Cadets, Royal Marines Cadets, and Junior Sea Cadets. Every feature is designed around how units actually run training.</p>
+
+    <!-- Feature 1: Dashboard -->
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Know Where Every Cadet Stands</h3>
+        <p>The dashboard shows upcoming training nights, rank-by-rank completion progress, and cadets approaching syllabus completion &mdash; so nothing falls through the cracks.</p>
+        <ul class="feature-list">
+          <li>Upcoming nights with duty senior rates</li>
+          <li>Completion percentages per rank</li>
+          <li>Near-completion alerts</li>
+          <li>Section switching between Sea, RM, and Junior</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/dashboard.png">
+          <span>Screenshot: Dashboard &mdash; Upcoming Nights &amp; Progress</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2: Session Planner -->
+    <div class="feature feature-reverse">
+      <div class="feature-text">
+        <h3>Know What to Teach Next</h3>
+        <p>The recommendation engine analyses cadet completions, prerequisites, and teaching sequences to surface the highest-impact modules for each training night.</p>
+        <ul class="feature-list">
+          <li>Ranked recommendations by cadet need</li>
+          <li>Search and browse all modules</li>
+          <li>Instructor assignment per module</li>
+          <li>Prerequisite and sequence validation</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/session-planner.png">
+          <span>Screenshot: Session Planner &mdash; Recommendations &amp; Module Selection</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Completions -->
+    <div class="feature">
+      <div class="feature-text">
+        <h3>See Cadet Progress Instantly</h3>
+        <p>A full matrix of every cadet against every module for each rank. Spot gaps, identify who needs what, and track progress across the entire unit.</p>
+        <ul class="feature-list">
+          <li>Cadet-by-module grid per rank</li>
+          <li>Visual completion indicators</li>
+          <li>Synced with Westminster data</li>
+          <li>Filter and search</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/completions.png">
+          <span>Screenshot: Completions Matrix &mdash; Cadets vs Modules</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 4: Westminster Sync -->
+    <div class="feature feature-reverse">
+      <div class="feature-text">
+        <h3>Works Alongside Westminster</h3>
+        <p>Upload CSV exports from Westminster and the platform matches cadets, adds completions, and removes outdated records. Your local data stays in sync with the national database.</p>
+        <ul class="feature-list">
+          <li>Upload or paste CSV data</li>
+          <li>Preview all changes before confirming</li>
+          <li>New cadets created automatically</li>
+          <li>Handles Sea, RM, and Junior formats</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/csv-sync.png">
+          <span>Screenshot: Westminster CSV Sync &mdash; Upload &amp; Preview</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 5: Junior Sections -->
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Full Junior Programme Support</h3>
+        <p>Colour-coded sections for the Junior Sea Cadet syllabus with badge tracking, core module requirements, and Commodore's Pennant progress across all five sections.</p>
+        <ul class="feature-list">
+          <li>RED, BLUE, GREEN, YELLOW, and STEM sections</li>
+          <li>Badge and core module progress tracking</li>
+          <li>Commodore's Pennant tracking</li>
+          <li>Section award management</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/junior-sections.png">
+          <span>Screenshot: Junior Sections &mdash; Badge Progress &amp; Section Awards</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 6: Class Slips -->
+    <div class="feature feature-reverse">
+      <div class="feature-text">
+        <h3>No More Lost Paperwork</h3>
+        <p>Instructors submit digital class slips after teaching. Reviewers approve them. Completions are recorded automatically. The entire process is auditable.</p>
+        <ul class="feature-list">
+          <li>Submit slips with modules and cadets</li>
+          <li>Review and approval workflow</li>
+          <li>Automatic completion recording</li>
+          <li>Full audit trail</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/class-slips.png">
+          <span>Screenshot: Class Slips &mdash; Submission &amp; Review</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 7: Reports -->
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Inspection-Ready Reports</h3>
+        <p>Generate printable completion matrices, class slip summaries, and audit trails. Everything you need for inspections and record-keeping, available at the click of a button.</p>
+        <ul class="feature-list">
+          <li>PDF completion matrix per rank</li>
+          <li>Class slip reports by date range</li>
+          <li>Audit trail with export</li>
+          <li>Print-friendly layouts</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/reports.png">
+          <span>Screenshot: Reports &mdash; Completion Matrix PDF</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 8: RBAC -->
+    <div class="feature feature-reverse">
+      <div class="feature-text">
+        <h3>Right People, Right Access</h3>
+        <p>Create custom roles so each staff member sees only the cadets and pages relevant to them. Admins have full control; instructors see what they need.</p>
+        <ul class="feature-list">
+          <li>Custom roles with per-page access</li>
+          <li>Rank-based data filtering</li>
+          <li>Read-only and write access levels</li>
+          <li>2FA enforcement per user</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/roles.png">
+          <span>Screenshot: Role Management &mdash; Permissions &amp; Rank Access</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section section-navy" id="how-it-works">
+  <div class="container">
+    <h2 class="section-title light">Up and Running in Three Steps</h2>
+    <p class="section-subtitle light">No lengthy onboarding. No migration headaches. Your unit can be live within a day.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Set Up Your Unit</h3>
+        <p>We configure a fresh install with your ranks, modules, and admin account. All Sea Cadet, Royal Marines, and Junior syllabus modules come pre-loaded.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Sync Westminster Data</h3>
+        <p>Upload your Westminster CSV exports. The system matches module codes, creates cadet records, and brings in all existing completions automatically.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Plan &amp; Track Training</h3>
+        <p>Use the dashboard to see progress, the session planner to prepare training nights, and class slips to record what's been taught. Everything in one place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Security -->
+<section class="section section-light" id="security">
+  <div class="container">
+    <h2 class="section-title">Your Data Is Protected</h2>
+    <p class="section-subtitle">Cadet data is sensitive. The platform is built with security at every level &mdash; not bolted on as an afterthought.</p>
+    <div class="cards-three">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>AES-256 Encryption</h3>
+        <p>All personal data is encrypted at the column level. Even direct database access reveals nothing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Two-Factor Authentication</h3>
+        <p>Every account is protected by TOTP-based 2FA. Admins control enforcement per user.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17,8 12,3 7,8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <h3>Encrypted Backups</h3>
+        <p>Password-protected backups with automatic schema migration. Restore to any compatible version.</p>
+      </div>
+    </div>
+    <div class="cards-two" style="margin-top: 2rem;">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Full Audit Trail</h3>
+        <p>Every action is logged. Exportable reports for inspections and compliance.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Granular Permissions</h3>
+        <p>Staff only see the cadets and pages relevant to their role. No over-sharing of data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Also Included -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Also Included</h2>
+    <div class="extras-grid">
+      <div class="extra">
+        <strong>Duty Rota</strong>
+        <p>Assign duty senior rates to upcoming training nights</p>
+      </div>
+      <div class="extra">
+        <strong>Dark Mode</strong>
+        <p>Full dark theme for comfortable evening use</p>
+      </div>
+      <div class="extra">
+        <strong>Mobile Friendly</strong>
+        <p>Responsive design works on phones and tablets</p>
+      </div>
+      <div class="extra">
+        <strong>Module Management</strong>
+        <p>Add, edit, and organise modules with categories and sequences</p>
+      </div>
+      <div class="extra">
+        <strong>Multi-Section</strong>
+        <p>Switch between Sea, RM, and Junior sections seamlessly</p>
+      </div>
+      <div class="extra">
+        <strong>Recommendations Engine</strong>
+        <p>Intelligent suggestions based on coverage, prerequisites, and freshness</p>
+      </div>
+      <div class="extra">
+        <strong>Cadet Profiles</strong>
+        <p>Individual progress views with completion history and awards</p>
+      </div>
+      <div class="extra">
+        <strong>Install as App</strong>
+        <p>Add to your home screen for quick access on any device</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Development -->
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Upcoming Development</h2>
+    <p class="section-subtitle">The platform is actively developed. Planned improvements include:</p>
+    <ul class="roadmap-list">
+      <li>Boating hours tracking</li>
+      <li>Specialisation &amp; proficiency tracking</li>
+      <li>Expanded reporting tools</li>
+      <li>Continued feature development based on unit, area, and district feedback</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section section-navy" id="contact">
+  <div class="container contact-section">
+    <h2 class="section-title light">Ready to Structure Your Unit's Training?</h2>
+    <p class="section-subtitle light">Pilot the Cadet Training Platform at your unit. We'll handle setup and get you running.</p>
+    <div class="contact-actions">
+      <a href="mailto:training@warsashscc.org.uk" class="btn btn-primary btn-lg">Request Access</a>
+    </div>
+    <p class="contact-note">Currently in use by Sea Cadet units and actively developed. Free during pilot and beta phase.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/sea-cadets.png" alt="Sea Cadets" class="footer-logo">
+        <span>Cadet Training Platform</span>
+      </div>
+      <p class="footer-note">Built for the Sea Cadet community.</p>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">This is an independently developed training platform and is not an official Sea Cadets national system.</p>
+      <p class="footer-updated">Last updated: February 2026</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Auto-load screenshots when image files are present
+document.querySelectorAll('.screenshot-placeholder[data-img]').forEach(el => {
+  const src = el.getAttribute('data-img');
+  const img = new Image();
+  img.onload = () => {
+    el.style.backgroundImage = `url(${src})`;
+    el.classList.add('has-image');
+  };
+  img.src = src;
+});
+</script>
+</body>
+</html>
