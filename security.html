@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security &amp; Privacy &mdash; CadetCore</title>
+  <meta name="description" content="CadetCore security: AES-256 encryption, two-factor authentication, Argon2id password hashing, encrypted backups, GDPR compliance, and full audit trail.">
+  <meta name="theme-color" content="#0f2040">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css?v=7">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-brand">
+      <img src="/sea-cadets.png" alt="Sea Cadets" class="nav-logo">
+      <span class="nav-title">CadetCore</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/features.html">Features</a>
+      <a href="/junior.html">Junior Programme</a>
+      <a href="/mobile.html">Mobile</a>
+      <a href="/security.html" class="active">Security</a>
+      <a href="/#contact" class="btn btn-sm btn-outline-light">Register Interest</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="container">
+    <h1>Security &amp; Privacy</h1>
+    <p>Cadet data is sensitive. CadetCore is built with security at every level &mdash; not bolted on as an afterthought.</p>
+  </div>
+</header>
+
+<!-- Core Security -->
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Data Protection</h2>
+    <p class="section-subtitle">Personal data is encrypted in the database, passwords are hashed with industry-leading algorithms, and every action leaves an audit trail.</p>
+
+    <div class="cards-three">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>AES-256 Encryption</h3>
+        <p>All personal data (names, emails) is encrypted at the column level using AES-256-GCM. Even direct database access reveals nothing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Two-Factor Authentication</h3>
+        <p>Email login codes on every sign-in by default, with optional authenticator app (TOTP) upgrade and encrypted recovery codes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17,8 12,3 7,8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <h3>Encrypted Backups</h3>
+        <p>Password-protected backups with Argon2id key derivation. Automatic schema migration means older backups are always restorable.</p>
+      </div>
+    </div>
+
+    <div class="cards-two" style="margin-top: 1.5rem;">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Full Audit Trail</h3>
+        <p>Every action is logged with before-and-after detail. Exportable reports for inspections and compliance.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Granular Permissions</h3>
+        <p>Custom roles with per-page access and rank-based data filtering. Staff only see the cadets relevant to their role.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infrastructure & Authentication -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Infrastructure &amp; Authentication</h2>
+    <p class="section-subtitle">Security runs through the entire stack, from password hashing to network-level protections.</p>
+
+    <div class="security-detail-grid">
+      <div class="security-detail-card">
+        <h3>Password Security</h3>
+        <p>Passwords are hashed with Argon2id using OWASP-recommended parameters (19 MiB memory, 2 iterations). No reversible password storage.</p>
+        <ul>
+          <li>Argon2id (OWASP parameters)</li>
+          <li>Progressive migration from bcrypt</li>
+          <li>Secure password reset via email</li>
+        </ul>
+      </div>
+
+      <div class="security-detail-card">
+        <h3>Session Management</h3>
+        <p>JWT-based sessions with a 24-hour maximum lifetime. Every session is tied to a login timestamp and validated on each request.</p>
+        <ul>
+          <li>24-hour session expiry</li>
+          <li>Login timestamp validation</li>
+          <li>Secure HTTP-only cookies</li>
+        </ul>
+      </div>
+
+      <div class="security-detail-card">
+        <h3>Rate Limiting</h3>
+        <p>IP-based rate limiting on sensitive endpoints prevents brute-force attacks. Account lockout after repeated failed attempts.</p>
+        <ul>
+          <li>Login attempt throttling</li>
+          <li>2FA code rate limiting</li>
+          <li>Password reset throttling</li>
+        </ul>
+      </div>
+
+      <div class="security-detail-card">
+        <h3>Security Headers</h3>
+        <p>Industry-standard security headers are set on every response to protect against common web vulnerabilities.</p>
+        <ul>
+          <li>Content Security Policy (CSP)</li>
+          <li>HTTP Strict Transport Security (HSTS)</li>
+          <li>X-Frame-Options, X-Content-Type-Options</li>
+        </ul>
+      </div>
+
+      <div class="security-detail-card">
+        <h3>TLS Everywhere</h3>
+        <p>All traffic is encrypted in transit with TLS. HSTS ensures browsers never downgrade to plain HTTP.</p>
+        <ul>
+          <li>TLS 1.2+ on all connections</li>
+          <li>Wildcard certificate management</li>
+          <li>Automatic HTTP-to-HTTPS redirect</li>
+        </ul>
+      </div>
+
+      <div class="security-detail-card">
+        <h3>2FA Hardening</h3>
+        <p>Two-factor authentication codes are hashed (SHA-256), magic links are bound to IP and user agent, and TOTP secrets are AES-256 encrypted.</p>
+        <ul>
+          <li>Hashed email verification codes</li>
+          <li>IP + user-agent bound magic links</li>
+          <li>Encrypted TOTP secrets &amp; recovery codes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GDPR -->
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-title">GDPR Compliance</h2>
+    <p class="section-subtitle">CadetCore includes built-in privacy features to help units meet their data protection obligations.</p>
+
+    <div class="cards-four">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Privacy Policy</h3>
+        <p>Built-in privacy page explaining what data is collected, how it's used, and who has access.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <h3>Data Export</h3>
+        <p>Cadets can export all their personal data in a single download &mdash; completions, qualifications, boating hours, and more.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3,6 5,6 21,6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+        </div>
+        <h3>Right to Erasure</h3>
+        <p>Full cascade delete removes all cadet data &mdash; completions, qualifications, boating hours, class slips, and audit records.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Backup Retention</h3>
+        <p>Automated daily backups with 14-day retention. Clear data lifecycle with no indefinite storage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-navy">
+  <div class="container contact-section">
+    <h2 class="section-title light">Questions About Security?</h2>
+    <p class="section-subtitle light">We take data protection seriously. Get in touch if you have questions about how CadetCore handles your unit's data.</p>
+    <div class="contact-actions">
+      <a href="mailto:info@cadetcore.app" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <a href="/" class="footer-brand">
+        <img src="/sea-cadets.png" alt="Sea Cadets" class="footer-logo">
+        <span>CadetCore</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="/features.html">Features</a></li>
+        <li><a href="/junior.html">Junior Programme</a></li>
+        <li><a href="/mobile.html">Mobile</a></li>
+        <li><a href="/security.html">Security</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">CadetCore is an independently developed companion tool for unit-level management. It is not endorsed by, affiliated with, or produced by the Marine Society &amp; Sea Cadets (MSSC). It is not a replacement for Westminster.</p>
+      <p class="footer-updated">Last updated: February 2026</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

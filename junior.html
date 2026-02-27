@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junior Programme &mdash; CadetCore</title>
+  <meta name="description" content="CadetCore's full Junior Sea Cadet programme support: colour-coded sections, badge tracking, STEM crest, Commodore's Broad Pennant, RPLE, and promotion eligibility.">
+  <meta name="theme-color" content="#0f2040">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css?v=7">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-brand">
+      <img src="/sea-cadets.png" alt="Sea Cadets" class="nav-logo">
+      <span class="nav-title">CadetCore</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/features.html">Features</a>
+      <a href="/junior.html" class="active">Junior Programme</a>
+      <a href="/mobile.html">Mobile</a>
+      <a href="/security.html">Security</a>
+      <a href="/#contact" class="btn btn-sm btn-outline-light">Register Interest</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="container">
+    <h1>Junior Sea Cadet Programme</h1>
+    <p>Full support for the Junior Sea Cadet syllabus &mdash; colour-coded sections, badge tracking, STEM crest, Commodore's Broad Pennant, RPLE, and promotion eligibility.</p>
+  </div>
+</header>
+
+<!-- Section Overview -->
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Five Colour-Coded Sections</h2>
+    <p class="section-subtitle">The Junior Sea Cadet syllabus is organised into five sections, each with its own modules and progression targets. CadetCore tracks them all with colour-coded tabs and progress indicators.</p>
+
+    <div class="section-badges-row">
+      <span class="section-badge badge-red">RED</span>
+      <span class="section-badge badge-blue">BLUE</span>
+      <span class="section-badge badge-green">GREEN</span>
+      <span class="section-badge badge-yellow">YELLOW</span>
+      <span class="section-badge badge-stem">STEM</span>
+    </div>
+
+    <!-- Screenshot: Junior Sections -->
+    <div style="max-width: 900px; margin: 2rem auto 0;">
+      <div class="screenshot-placeholder" data-img="/screenshots/junior-sections.png" style="aspect-ratio: 16/10;">
+        <span>Screenshot: Junior Section Tabs with Colour-Coded Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Badges, Crest, Pennant -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Badges, Crest &amp; Pennant</h2>
+    <p class="section-subtitle">CadetCore automatically detects when a cadet qualifies for a section badge, the STEM crest, or the Commodore's Broad Pennant &mdash; and creates review items for Westminster submission.</p>
+
+    <div class="junior-info-grid">
+      <div class="junior-info-card card-accent-left">
+        <h3>Section Badges</h3>
+        <p>Each section has a badge that is automatically awarded when the cadet meets the criteria:</p>
+        <ul>
+          <li>15 or more module completions in the section</li>
+          <li>All core modules in the section completed</li>
+          <li>RED section: 15 core modules</li>
+          <li>BLUE section: 9 core modules</li>
+          <li>GREEN, YELLOW, STEM: no core module requirements</li>
+        </ul>
+        <p>Core modules are highlighted with a blue "Core" badge so it's always clear which modules count.</p>
+      </div>
+
+      <div class="junior-info-card card-accent-left">
+        <h3>SCC JSC Crest Award</h3>
+        <p>The STEM Crest is awarded when a cadet completes 8 or more modules in the STEM section.</p>
+        <ul>
+          <li>Auto-detected from STEM module completions</li>
+          <li>Creates a QualificationAward for Westminster review</li>
+          <li>Visible on the cadet's profile with award history</li>
+        </ul>
+      </div>
+
+      <div class="junior-info-card card-accent-left">
+        <h3>Commodore's Broad Pennant</h3>
+        <p>The pinnacle junior award. Automatically detected when a cadet has:</p>
+        <ul>
+          <li>All four section badges awarded (RED, BLUE, GREEN, YELLOW)</li>
+          <li>23 or more modules completed in each of those four sections</li>
+          <li>Creates a review item for Westminster submission</li>
+        </ul>
+      </div>
+
+      <div class="junior-info-card card-accent-left">
+        <h3>Westminster Review</h3>
+        <p>When badges, crest, or pennant are auto-detected, they appear on the Westminster Review page as pending items. Reviewers can:</p>
+        <ul>
+          <li>Accept and log for Westminster submission</li>
+          <li>Add review notes</li>
+          <li>Track which items have been submitted</li>
+          <li>See source badges (WM, Manual, Auto-detected)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RPLE -->
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-title">RPLE &mdash; Recognition of Prior Learning &amp; Experience</h2>
+    <p class="section-subtitle">CadetCore automatically maps junior module completions to the senior NE01&ndash;NE10 modules, creating RPLE evidence records without any manual entry.</p>
+
+    <div class="junior-info-grid">
+      <div class="junior-info-card">
+        <h3>How It Works</h3>
+        <p>Each NE module (NE01 through NE10) has a defined set of junior evidence modules. When a cadet completes all the evidence modules for an NE module, the NE completion is automatically created.</p>
+        <ul>
+          <li>Mapping defined in the system &mdash; no manual configuration</li>
+          <li>RPLE-sourced completions are protected from Westminster sync removal</li>
+          <li>Creates review items for Westminster submission</li>
+        </ul>
+      </div>
+
+      <div class="junior-info-card">
+        <h3>Review &amp; Submission</h3>
+        <p>RPLE auto-completions appear as review items grouped by cadet and effective date. Reviewers can:</p>
+        <ul>
+          <li>See which junior modules provided the evidence</li>
+          <li>Accept for Westminster submission</li>
+          <li>Track RPLE status separately from other review items</li>
+          <li>RPLE indicators shown on cadet profiles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Promotion Eligibility -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Promotion Eligibility</h2>
+    <p class="section-subtitle">CadetCore tracks each cadet's readiness for the next rank, showing exactly which criteria are met and which still need work.</p>
+
+    <div class="junior-info-grid">
+      <div class="junior-info-card">
+        <h3>Junior Rank Progression</h3>
+        <p>The four junior ranks each have defined promotion criteria:</p>
+        <ul>
+          <li><strong>JC &rarr; JCFC:</strong> Section badge criteria (completions + core modules)</li>
+          <li><strong>JCFC &rarr; AJC:</strong> Additional section badges and proficiency requirements</li>
+          <li><strong>AJC &rarr; LJC:</strong> Full section coverage with pennant-level progress</li>
+        </ul>
+      </div>
+
+      <div class="junior-info-card">
+        <h3>Proficiency Awards for Promotion</h3>
+        <p>Certain qualifications are flagged as core for junior promotion. These are managed by admins and pre-seeded with:</p>
+        <ul>
+          <li>BC Paddle Discover</li>
+          <li>Rowing SCC Competent Crew</li>
+          <li>Sail RYA YSS Stage 2</li>
+          <li>SCC Row 2</li>
+        </ul>
+        <p>The cadet profile shows which proficiency awards are held, making promotion eligibility clear at a glance.</p>
+      </div>
+    </div>
+
+    <!-- Screenshot: Cadet Profile -->
+    <div style="max-width: 900px; margin: 2.5rem auto 0;">
+      <div class="screenshot-placeholder" data-img="/screenshots/cadet-profile.png" style="aspect-ratio: 16/10;">
+        <span>Screenshot: Cadet Profile with Section Progress &amp; Promotion Eligibility</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-navy">
+  <div class="container contact-section">
+    <h2 class="section-title light">Interested in CadetCore for Your Unit?</h2>
+    <p class="section-subtitle light">Register your interest and we'll be in touch when a place opens up.</p>
+    <div class="contact-actions">
+      <a href="mailto:info@cadetcore.app" class="btn btn-primary btn-lg">Register Interest</a>
+    </div>
+    <p class="contact-note">Currently in closed beta with select Sea Cadet units. Free during pilot phase.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <a href="/" class="footer-brand">
+        <img src="/sea-cadets.png" alt="Sea Cadets" class="footer-logo">
+        <span>CadetCore</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="/features.html">Features</a></li>
+        <li><a href="/junior.html">Junior Programme</a></li>
+        <li><a href="/mobile.html">Mobile</a></li>
+        <li><a href="/security.html">Security</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">CadetCore is an independently developed companion tool for unit-level management. It is not endorsed by, affiliated with, or produced by the Marine Society &amp; Sea Cadets (MSSC). It is not a replacement for Westminster.</p>
+      <p class="footer-updated">Last updated: February 2026</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.screenshot-placeholder[data-img]').forEach(el => {
+  const src = el.getAttribute('data-img');
+  const img = new Image();
+  img.onload = () => {
+    el.style.backgroundImage = `url(${src})`;
+    el.classList.add('has-image');
+  };
+  img.src = src;
+});
+</script>
+</body>
+</html>

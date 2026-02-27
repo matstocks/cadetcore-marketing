@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile &mdash; CadetCore</title>
+  <meta name="description" content="CadetCore works beautifully on mobile devices. Responsive design, PWA install support, and full functionality on phones and tablets.">
+  <meta name="theme-color" content="#0f2040">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css?v=7">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-brand">
+      <img src="/sea-cadets.png" alt="Sea Cadets" class="nav-logo">
+      <span class="nav-title">CadetCore</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/features.html">Features</a>
+      <a href="/junior.html">Junior Programme</a>
+      <a href="/mobile.html" class="active">Mobile</a>
+      <a href="/security.html">Security</a>
+      <a href="/#contact" class="btn btn-sm btn-outline-light">Register Interest</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="container">
+    <h1>Works on Every Device</h1>
+    <p>CadetCore is fully responsive &mdash; use it on your phone, tablet, or desktop. Install it as an app for quick access with no app store required.</p>
+  </div>
+</header>
+
+<!-- Mobile Showcase -->
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Full App, Phone-Sized</h2>
+    <p class="section-subtitle">Every feature works on mobile. The interface adapts to smaller screens with a hamburger menu, touch-friendly controls, and optimised layouts.</p>
+
+    <div class="phone-grid">
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="/screenshots/mobile-dashboard.png" alt="Dashboard on mobile" loading="lazy">
+        </div>
+        <p>Dashboard</p>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="/screenshots/mobile-nav.png" alt="Navigation menu on mobile" loading="lazy">
+        </div>
+        <p>Navigation</p>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="/screenshots/mobile-cadets.png" alt="Cadets list on mobile" loading="lazy">
+        </div>
+        <p>Cadets</p>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="/screenshots/mobile-cadet-profile.png" alt="Cadet profile on mobile" loading="lazy">
+        </div>
+        <p>Cadet Profile</p>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="/screenshots/mobile-class-slips.png" alt="Class slips on mobile" loading="lazy">
+        </div>
+        <p>Class Slips</p>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <img src="/screenshots/mobile-completions.png" alt="Completions on mobile" loading="lazy">
+        </div>
+        <p>Completions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Install as App -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Install as an App</h2>
+    <p class="section-subtitle">CadetCore can be installed as a Progressive Web App (PWA) on any device. Add it to your home screen for quick access &mdash; it looks and feels like a native app, no app store required.</p>
+
+    <div class="cards-three" style="max-width: 840px; margin: 0 auto;">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+        </div>
+        <h3>iPhone &amp; iPad</h3>
+        <p>Tap Share, then "Add to Home Screen". Opens full-screen without the browser bar.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>Android</h3>
+        <p>Chrome shows an "Install App" banner automatically. One tap and it's on your home screen.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Desktop</h3>
+        <p>Click the install icon in the Chrome address bar. Runs as a standalone window.</p>
+      </div>
+    </div>
+
+    <div style="max-width: 280px; margin: 2.5rem auto 0; text-align: center;">
+      <div class="phone-frame">
+        <img src="/screenshots/mobile-settings.png" alt="Settings on mobile" loading="lazy">
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--gray-600);">Settings &amp; account management on mobile</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-navy">
+  <div class="container contact-section">
+    <h2 class="section-title light">Try CadetCore on Your Device</h2>
+    <p class="section-subtitle light">Register your interest and we'll be in touch when a place opens up.</p>
+    <div class="contact-actions">
+      <a href="mailto:info@cadetcore.app" class="btn btn-primary btn-lg">Register Interest</a>
+    </div>
+    <p class="contact-note">Currently in closed beta with select Sea Cadet units. Free during pilot phase.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <a href="/" class="footer-brand">
+        <img src="/sea-cadets.png" alt="Sea Cadets" class="footer-logo">
+        <span>CadetCore</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="/features.html">Features</a></li>
+        <li><a href="/junior.html">Junior Programme</a></li>
+        <li><a href="/mobile.html">Mobile</a></li>
+        <li><a href="/security.html">Security</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">CadetCore is an independently developed companion tool for unit-level management. It is not endorsed by, affiliated with, or produced by the Marine Society &amp; Sea Cadets (MSSC). It is not a replacement for Westminster.</p>
+      <p class="footer-updated">Last updated: February 2026</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

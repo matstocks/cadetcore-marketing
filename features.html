@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features &mdash; CadetCore</title>
+  <meta name="description" content="Explore all CadetCore features: dashboard, session planner, completions matrix, Westminster sync, qualifications, boating hours, and more.">
+  <meta name="theme-color" content="#0f2040">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css?v=7">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-brand">
+      <img src="/sea-cadets.png" alt="Sea Cadets" class="nav-logo">
+      <span class="nav-title">CadetCore</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/features.html" class="active">Features</a>
+      <a href="/junior.html">Junior Programme</a>
+      <a href="/mobile.html">Mobile</a>
+      <a href="/security.html">Security</a>
+      <a href="/#contact" class="btn btn-sm btn-outline-light">Register Interest</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="container">
+    <h1>Features</h1>
+    <p>Purpose-built for Sea Cadets, Royal Marines Cadets, and Junior Sea Cadets. Every feature is designed around how units actually run training.</p>
+  </div>
+</header>
+
+<!-- Features -->
+<section class="section section-dark" id="features">
+  <div class="container">
+
+    <!-- Feature 1: Dashboard -->
+    <div class="feature" id="dashboard">
+      <div class="feature-text">
+        <h3>Know Where Every Cadet Stands</h3>
+        <p>The dashboard shows upcoming training nights, rank-by-rank completion progress, and cadets approaching syllabus completion &mdash; so nothing falls through the cracks.</p>
+        <ul class="feature-list">
+          <li>Upcoming nights with duty senior rates</li>
+          <li>Completion percentages per rank</li>
+          <li>Near-completion alerts</li>
+          <li>Section switching between Sea, RM, and Junior</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/dashboard.png">
+          <span>Screenshot: Dashboard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2: Session Planner -->
+    <div class="feature feature-reverse" id="session-planner">
+      <div class="feature-text">
+        <h3>Know What to Teach Next</h3>
+        <p>The recommendation engine analyses cadet completions, prerequisites, and teaching sequences to surface the highest-impact modules for each training night.</p>
+        <ul class="feature-list">
+          <li>Ranked recommendations by cadet need</li>
+          <li>Search and browse all modules</li>
+          <li>Instructor assignment per module</li>
+          <li>Prerequisite and sequence validation</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/session-planner.png">
+          <span>Screenshot: Session Planner</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Full Night Plan -->
+    <div class="feature" id="full-night-plan">
+      <div class="feature-text">
+        <h3>Plan an Entire Training Night at Once</h3>
+        <p>The Full Night Plan lets you build a complete training night for all ranks in one go. Pick modules, assign instructors, and add non-module activities like Colours, Rounds, and Drill &mdash; then save the whole thing as a session.</p>
+        <ul class="feature-list">
+          <li>Plan across all ranks simultaneously</li>
+          <li>Assign instructors per module</li>
+          <li>Add non-module activities (Drill, Colours, etc.)</li>
+          <li>Save directly as a session record</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/full-night-plan.png">
+          <span>Screenshot: Full Night Plan</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 4: Completions -->
+    <div class="feature feature-reverse" id="completions">
+      <div class="feature-text">
+        <h3>See Cadet Progress Instantly</h3>
+        <p>A full matrix of every cadet against every module for each rank. Spot gaps, identify who needs what, and track progress across the entire unit.</p>
+        <ul class="feature-list">
+          <li>Cadet-by-module grid per rank</li>
+          <li>Visual completion indicators</li>
+          <li>Synced with Westminster data</li>
+          <li>Promotion eligibility tracking</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/completions.png">
+          <span>Screenshot: Completions Matrix</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 5: Westminster Sync -->
+    <div class="feature" id="westminster-sync">
+      <div class="feature-text">
+        <h3>Works Alongside Westminster</h3>
+        <p>Upload CSV exports from Westminster and the platform matches cadets, adds completions, and removes outdated records. Every change is shown in a review panel before anything is applied.</p>
+        <ul class="feature-list">
+          <li>Full review panel &mdash; accept or reject any change</li>
+          <li>Pin completions to protect them from future syncs</li>
+          <li>Unknown modules resolved with merge or ignore</li>
+          <li>Handles Sea, RM, and Junior formats</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/csv-sync.png">
+          <span>Screenshot: Westminster CSV Sync</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 6: Qualifications -->
+    <div class="feature feature-reverse" id="qualifications">
+      <div class="feature-text">
+        <h3>Track Qualifications &amp; Proficiency Awards</h3>
+        <p>A dedicated system for proficiency awards and qualifications, separate from the training syllabus. Track who holds what, when it expires, and import directly from Westminster CSV or Part II Orders.</p>
+        <ul class="feature-list">
+          <li>Qualification types with expiry periods</li>
+          <li>Qualifications matrix &mdash; green (held), amber (expired)</li>
+          <li>Import from Westminster CSV or Part II Orders</li>
+          <li>Core-for-promotion flags for junior promotion eligibility</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/qualifications.png">
+          <span>Screenshot: Qualifications Matrix</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 7: Courses -->
+    <div class="feature" id="courses">
+      <div class="feature-text">
+        <h3>Manage Course Interest &amp; Bookings</h3>
+        <p>Track upcoming courses from Westminster, register which cadets are interested with priority rankings, and manage the journey from expression of interest through to booking.</p>
+        <ul class="feature-list">
+          <li>Import courses from Westminster CSV</li>
+          <li>Cadet interest with 1st/2nd/3rd choice ranking</li>
+          <li>Staff priority assessment (High/Medium/Low)</li>
+          <li>Automatic status tabs: Ready to Book, Not Yet Open, Booked, Rejected</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/courses.png">
+          <span>Screenshot: Courses</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 8: Boating Hours -->
+    <div class="feature feature-reverse" id="boating-hours">
+      <div class="feature-text">
+        <h3>Track Boating Hours</h3>
+        <p>Log group boating sessions for multiple cadets at once, tracking hours across five activity types. Every cadet has a 30-hour annual target with clear progress indicators and a printable PDF report.</p>
+        <ul class="feature-list">
+          <li>Rowing, Power, Sailing, Paddlesport, Windsurfing</li>
+          <li>30-hour annual target with status tracking</li>
+          <li>Sortable matrix with activity breakdown</li>
+          <li>PDF boating hours report</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/boating-hours.png">
+          <span>Screenshot: Boating Hours</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 9: Class Slips & Westminster Review -->
+    <div class="feature" id="class-slips">
+      <div class="feature-text">
+        <h3>No More Lost Paperwork</h3>
+        <p>Instructors submit digital class slips after teaching. Reviewers approve them. Completions are recorded automatically. The Westminster Review page combines class slips and qualifications review in one place, with pending counts in the navigation.</p>
+        <ul class="feature-list">
+          <li>Submit slips with modules and cadets</li>
+          <li>Review and approval workflow</li>
+          <li>Combined Westminster Review page</li>
+          <li>Accept, reject, or log with review notes</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/class-slips.png">
+          <span>Screenshot: Class Slips</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 10: Reports -->
+    <div class="feature feature-reverse" id="reports">
+      <div class="feature-text">
+        <h3>Inspection-Ready Reports</h3>
+        <p>Generate printable completion matrices, class slip summaries, boating hours reports, and audit trails. Everything you need for inspections and record-keeping, available at the click of a button.</p>
+        <ul class="feature-list">
+          <li>PDF completion matrix per rank</li>
+          <li>Class slip reports by date range</li>
+          <li>Boating hours reports</li>
+          <li>Print-friendly layouts</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/reports.png">
+          <span>Screenshot: Reports</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 11: Audit Log -->
+    <div class="feature" id="audit-log">
+      <div class="feature-text">
+        <h3>Full Audit Trail</h3>
+        <p>Every action is logged with who did it, what changed, and when. Click any entry to see before-and-after details. Filter by entity type and export for inspections.</p>
+        <ul class="feature-list">
+          <li>Detailed before/after change views</li>
+          <li>Filter by cadets, users, modules, sessions, roles</li>
+          <li>Plain-English summaries of every change</li>
+          <li>Exportable for compliance and inspections</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/audit-log.png">
+          <span>Screenshot: Audit Log</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 12: RBAC -->
+    <div class="feature feature-reverse" id="roles">
+      <div class="feature-text">
+        <h3>Right People, Right Access</h3>
+        <p>Create custom roles so each staff member sees only the cadets and pages relevant to them. Admins have full control; instructors see what they need.</p>
+        <ul class="feature-list">
+          <li>Custom roles with per-page access</li>
+          <li>Rank-based data filtering</li>
+          <li>Read-only and write access levels</li>
+          <li>2FA enforcement per user</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/roles.png">
+          <span>Screenshot: Role Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 13: Email & Authentication -->
+    <div class="feature" id="authentication">
+      <div class="feature-text">
+        <h3>Secure Sign-In &amp; Email Integration</h3>
+        <p>Every sign-in is protected by two-factor authentication &mdash; a 6-digit email code by default, with optional authenticator app upgrade. Welcome emails, password resets, and branded templates are all built in.</p>
+        <ul class="feature-list">
+          <li>Email login codes (2FA) on every sign-in</li>
+          <li>Optional authenticator app with recovery codes</li>
+          <li>Forgot password with secure reset link</li>
+          <li>Branded email templates with unit insignia</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/authentication.png">
+          <span>Screenshot: Authentication</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 14: Divisions -->
+    <div class="feature feature-reverse" id="divisions">
+      <div class="feature-text">
+        <h3>Divisions &amp; Part II Orders</h3>
+        <p>Import Part II CSV files from Westminster, add manual items for things not covered by Westminster, and manage a persistent award queue. Generate a PDF for the parade and track what's been awarded or acknowledged.</p>
+        <ul class="feature-list">
+          <li>Part II CSV import from Westminster</li>
+          <li>Manual item entry for local awards and announcements</li>
+          <li>Persistent award queue with awarded/ignored tracking</li>
+          <li>PDF download for divisions parade</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/divisions.png">
+          <span>Screenshot: Divisions &amp; Part II</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 15: Cadet Profiles -->
+    <div class="feature" id="cadet-profiles">
+      <div class="feature-text">
+        <h3>Detailed Cadet Profiles</h3>
+        <p>Every cadet has a profile showing their section-by-section completion progress, promotion eligibility criteria, qualification history, boating hours, and a personal data export for GDPR compliance.</p>
+        <ul class="feature-list">
+          <li>Section completion with core module tracking</li>
+          <li>Promotion eligibility with criteria breakdown</li>
+          <li>Qualification and award history</li>
+          <li>Boating hours summary and data export</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/cadet-profile.png">
+          <span>Screenshot: Cadet Profile</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 16: Backup & Restore -->
+    <div class="feature feature-reverse" id="backup">
+      <div class="feature-text">
+        <h3>Backup &amp; Restore</h3>
+        <p>Create encrypted, password-protected backups of all your data. Restore to any compatible version with automatic schema migration. Backups are taken automatically before every Westminster sync.</p>
+        <ul class="feature-list">
+          <li>AES-256 encrypted with Argon2id key derivation</li>
+          <li>Automatic schema migration on restore</li>
+          <li>Pre-sync automatic backups</li>
+          <li>Forward-compatible &mdash; older backups always restorable</li>
+        </ul>
+      </div>
+      <div class="feature-screenshot">
+        <div class="screenshot-placeholder" data-img="/screenshots/backup.png">
+          <span>Screenshot: Backup &amp; Restore</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-navy">
+  <div class="container contact-section">
+    <h2 class="section-title light">Ready to See CadetCore in Action?</h2>
+    <p class="section-subtitle light">Register your interest and we'll be in touch when a place opens up.</p>
+    <div class="contact-actions">
+      <a href="mailto:info@cadetcore.app" class="btn btn-primary btn-lg">Register Interest</a>
+    </div>
+    <p class="contact-note">Currently in closed beta with select Sea Cadet units. Free during pilot phase.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <a href="/" class="footer-brand">
+        <img src="/sea-cadets.png" alt="Sea Cadets" class="footer-logo">
+        <span>CadetCore</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="/features.html">Features</a></li>
+        <li><a href="/junior.html">Junior Programme</a></li>
+        <li><a href="/mobile.html">Mobile</a></li>
+        <li><a href="/security.html">Security</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">CadetCore is an independently developed companion tool for unit-level management. It is not endorsed by, affiliated with, or produced by the Marine Society &amp; Sea Cadets (MSSC). It is not a replacement for Westminster.</p>
+      <p class="footer-updated">Last updated: February 2026</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.screenshot-placeholder[data-img]').forEach(el => {
+  const src = el.getAttribute('data-img');
+  const img = new Image();
+  img.onload = () => {
+    el.style.backgroundImage = `url(${src})`;
+    el.classList.add('has-image');
+  };
+  img.src = src;
+});
+</script>
+</body>
+</html>
